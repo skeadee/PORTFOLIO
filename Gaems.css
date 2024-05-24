@@ -1,0 +1,201 @@
+*
+{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    width: 100%;
+}
+
+
+
+nav
+{
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    border: whitesmoke 2px solid;
+    background: rgb(50,50,50);
+    color: whitesmoke;
+
+    
+    font-size: 30px;
+    font-weight: bolder;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+nav > a
+{
+    width: 200px;
+    height: 100%;
+    border: white 2px solid;
+}
+
+nav > a:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+nav > li
+{
+    width: 200px;
+    height:  100%;
+    border: white 2px solid;
+    z-index: 1;
+} 
+
+nav > li > ul li
+{
+    display: none; 
+
+    width: 100%;
+    height: 50px;
+    background-color: rgb(50,50,50);
+    border: black 1px solid; 
+}
+
+nav > li:hover > ul li{
+    display: block;
+}
+
+nav > li:hover{
+    background-color: whitesmoke;
+    color: black;
+
+    
+}
+
+nav > li{
+    position: relative;
+}
+
+nav > li > ul{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+nav > li > ul li a{
+    color: whitesmoke;
+}
+
+nav > li > ul li:hover{
+    background-color : whitesmoke;
+}
+
+nav > li > ul li:hover > a{
+    color: black;
+}
+
+
+
+
+main
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+main > section.GaemName
+{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 50px;
+
+   
+
+    text-align: center;
+    background-color: rgb(0, 6, 31);
+    color: whitesmoke;
+}
+
+section.GaemName > p
+{
+   text-align: center;
+   font-size: 70px;
+}
+
+
+
+section.GaemIntroduction
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 650px;
+   
+    
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+main > aside{ /* 밑에 칸 크기*/
+    width: 100%;
+  
+   
+    background-color: gray;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;   
+   
+}
+
+main > aside  div.Introduction
+{   
+    width: 100%;
+    height: 100%;  
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 150px;
+}
+
+
+ul.explanation{
+    padding-left: 20px;
+}
+
+ul.explanation li{
+    padding-top: 20px;
+}
+
+
+#Sort
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
