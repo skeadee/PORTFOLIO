@@ -1,10 +1,29 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
 
     box-sizing: border-box;
     list-style: none;
 }
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+a{
+    text-decoration-line: none;
+
+    color: white;
+    text-align: center;
+}
+
+a:visited{
+    color: white;
+}
+
 
 /* 사이드바 */
 #sidebar {
@@ -24,6 +43,7 @@
 
     font-size: 25px;
     padding-top: 30px;
+    font-weight: bold;
 
     text-align: center;
     float: left;
@@ -41,12 +61,11 @@
     transition-property: background-color;
     transition-duration: 0.5s;
     background-color: rgb(187, 211, 244);
-}	
+}
 
 
 /* 타이틀 */
-#Title 
-{
+#Title {
     width: 100%;
     height: 600px;
     background-color: rgb(255, 207, 96);
@@ -57,18 +76,13 @@
 
 }
 
-#Title p
-{
-    
-    font-size: 50px;
-    font-weight: 900; 
+#Title p {
 
-    
-    
+    font-size: 50px;
+    font-weight: 900;
 }
 
-#Title hr
-{
+#Title hr {
 
     height: 10px;
     width: 100px;
@@ -77,8 +91,7 @@
     margin-top: 10px;
 }
 
-#Title div
-{
+#Title div {
     margin-top: 20px;
     font-size: 18px;
 }
@@ -88,31 +101,27 @@
 
 
 
-#Personal
-{
+#Personal {
     width: 100%;
     height: 300px;
 
-   
+
     display: flex;
     flex-direction: column;
 
 }
 
 
-#Personal p
-{
+#Personal p {
     font-size: 50PX;
     font-weight: 900;
 }
 
-#Personal hr
-{
+#Personal hr {
     width: 250px;
 }
 
-#Personal .per 
-{
+#Personal .per {
     margin-top: 20px;
 
     width: 1000px;
@@ -121,22 +130,20 @@
     display: flex;
     flex-wrap: wrap;
 
-    
+
 }
 
-#Personal .per div
-{
+#Personal .per div {
     width: 300px;
     height: 100px;
 
-    
 
-   
+
+
 }
 
 
-#Skills
-{
+#Skills {
     margin-top: 50px;
 
     width: 100%;
@@ -145,8 +152,7 @@
     background-color: rgb(174, 174, 160);
 }
 
-#Skills .Skill_Title
-{
+#Skills .Skill_Title {
     padding-top: 50px;
     text-align: center;
 
@@ -154,8 +160,7 @@
     font-weight: bolder;
 }
 
-#Skills .Skill_Box
-{
+#Skills .Skill_Box {
     margin-top: 50px;
 
     display: flex;
@@ -167,8 +172,7 @@
 
 }
 
-#Skills .Skill_Box > div
-{
+#Skills .Skill_Box>div {
     border-radius: 10px;
     padding: 30px;
 }
@@ -178,18 +182,16 @@
 
 
 
+/* 프로젝트 */
 
-
-#Projects
-{
+#Projects {
     width: 100%;
-    height: 8700px;
+    height: 2200px;
 
     background-color: rgb(17, 153, 244);
 }
 
-#Projects > .Projects_Title
-{
+#Projects>.Projects_Title {
     padding-top: 50px;
 
     text-align: center;
@@ -198,19 +200,19 @@
     color: white;
 }
 
-#Projects .Games
-{
-    margin-top: 50px;
+#Projects .Games {
+    margin-top: 25px;
 
-    width: 1300px;
-    height: 800px;
+    background-color: black;
+
+    width: 1000px;
+    padding: 40px;
 
     border-radius: 10px;
     background-color: white;
 }
 
-.Games > .Game_Title
-{
+.Games>.Game_Title {
     padding-top: 20px;
 
     text-align: center;
@@ -218,54 +220,74 @@
     height: 100px;
     font-size: 40px;
     font-weight: bold;
-
-   
 }
 
-.Games > .Game_Production
-{
-    
+.Games>.Game_Production {
+
     text-align: center;
     margin-bottom: 20px;
 
-    width: 100%;
+    width: 80%;
     height: 50px;
 
     font-size: 20px;
 
 }
 
-.Games > .Game_Panel
-{
-    width: 100%;
-    height: 630px;
+.Games>.Game_Panel {
+    height: 100px;
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+    flex-direction: row;
 }
 
+.Games video {
 
-.Game_Panel > .Game_video
-{
-    width: 50%;
-    height: 100%; 
-    
-
-    padding: 0px 80px 80px 80px;
-}
-
-.Game_Start
-{
-    width: 150px;
-    height: 50px;
+    height: 100px;
+    width: 100px;
+   
+    margin: 0px;
 
     background-color: black;
-    text-align: center;
+    border: 3px solid black;
+}
 
-    border-radius: 10px;
+.Games .Game_txt {
+    margin: 0px;
+    padding-left: 50px;
+    width: 250px;
 
-    padding-top: 10px;
-    margin-left: 0px;
+    text-align: left;
+}
+
+
+
+
+
+.Game_Panel div:nth-child(n+2) {
+    border-right: 2px solid gray;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+.Game_Panel div:last-child {
+    border: none;
+}
+
+.Game_Panel .Game_Button {
+
+    margin: 20px 0px 20px 20px;
+    padding: 15px;
+    
+    border-radius: 15px;
+    
+
+    background-color: black;
+    color: white;
+}
+
+.Game_Panel div {
+
+    padding-top: 15px;
+    line-height: 30px;
 }
