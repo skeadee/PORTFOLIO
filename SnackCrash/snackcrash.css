@@ -1,0 +1,49 @@
+li {
+    list-style: none;
+}
+
+
+/* 게임 소개 이미지 */
+.outline {
+    margin: 0 auto;
+
+    width: 1500px;
+    margin-top: 30px;
+    background-color: gainsboro;
+    border-radius: 15px;
+    font-size: 20px;
+
+    padding: 40px;
+}
+
+.outline .img {
+    height: 500px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.outline .img li {
+    width: 30%;
+    background-color: beige;
+}
+
+.outline .exp_link {
+
+    width: 225px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* 문제점 및 문제 해결 */
+.editor {
+
+    width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+}
